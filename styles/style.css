@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  background-color: #fff;
+}
+
+main {
+  box-sizing: border-box;
+  padding: 1rem;
+  max-width: 36rem;
+  min-height: 100vh;
+}
+
+h1,
+p,
+a {
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  background-color: #4338ca;
+}
+
+h1,
+p {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+h1 {
+  display: block;
+  width: fit-content;
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  display: inline;
+  line-height: 1.8;
+  word-spacing: 0.1em;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  display: block;
+  padding: 0.3rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a {
+    transition: none;
+  }
+
+  a:hover,
+  a:focus-visible {
+    transform: none;
+  }
+}
